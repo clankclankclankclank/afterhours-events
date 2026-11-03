@@ -1,5 +1,7 @@
 # AFTERHOURS
 
+[Live website](https://clankclankclankclank.github.io/afterhours-events/) · [Repository](https://github.com/clankclankclankclank/afterhours-events)
+
 A responsive event discovery and registration website built with semantic HTML5, CSS3 and vanilla JavaScript. An editorial ivory-and-orange identity pairs immersive photography with restrained motion.
 
 ## Features
@@ -10,13 +12,13 @@ A responsive event discovery and registration website built with semantic HTML5,
 - Native modal focus handling, keyboard controls, visible focus indicators, labelled inputs, status messages and reduced-motion support.
 
 ## Run locally
-Serve `dist` with any static server, e.g. `npx serve dist`. No build step or framework is required.
+Serve the repository root with any static server, e.g. `npx serve .`. No build step or framework is required.
 
 ## Structure
-`dist/index.html` - semantic page and modal shell. `dist/style.css` - responsive design, themes and animation. `dist/app.js` - event data, filtering, countdowns, form validation and storage.
+`index.html` - semantic page and modal shell. `style.css` - responsive design, themes and animation. `app.js` - event data, filtering, countdowns, form validation and storage.
 
 ## Deployment
-For Vercel or Netlify use no build command and set output/publish directory to `dist`. For GitHub Pages deploy the contents of `dist` using an Actions static-pages workflow.
+GitHub Pages publishes the `main` branch root. For Vercel or Netlify use no build command and publish the repository root.
 
 ## Data and limitations
 This is an educational front-end demo. Events are fictional, registrations remain in the current browser, and no bookings, payments or email confirmations are sent. Do not enter sensitive personal information on a shared device. Local storage can be cleared by the user and is not a production database. Real registration would require a backend, server validation, secure data storage and email delivery.
@@ -24,5 +26,5 @@ This is an educational front-end demo. Events are fictional, registrations remai
 Images load from Unsplash; fonts load from Google Fonts. Network access is needed for these assets. Typography falls back to system fonts. All event times are explicitly shown in IST.
 
 ## Manual verification
-Check search/category combinations, zero results, both sort options, each event dialog, Escape/close, countdown, invalid form values, duplicate registration, successful pass creation, reload persistence, removal, theme persistence, keyboard navigation and mobile widths. JavaScript syntax can be checked with `node --check dist/app.js`.
+Check search/category combinations, zero results, both sort options, each event dialog, Escape/close, countdown, invalid form values, duplicate registration, successful pass creation, reload persistence, removal, theme persistence, keyboard navigation and mobile widths. JavaScript syntax can be checked with `node --check app.js`.
 
